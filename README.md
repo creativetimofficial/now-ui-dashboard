@@ -56,6 +56,7 @@ Now Ui Dashboard
 │   │   ├── notifications.html
 │   │   ├── map.html
 │   │   ├── dashboard.html
+│   │   ├── user.html
 │   │   └── icons.html
 │   ├── nucleo-icons.html
 └── CHANGELOG.md
