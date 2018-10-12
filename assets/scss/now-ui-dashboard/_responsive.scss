@@ -7,9 +7,46 @@
         display: none;
     }
 
+    [data-notify="container"].alert{
+      min-width: 400px;
+    }
+
     #minimizeSidebar{
         display: none;
     }
+
+    .timeline>li>.timeline-panel {
+      width: 86% !important;
+      float: right !important;
+    }
+
+
+
+    .timeline:before,
+    .timeline>li>.timeline-badge {
+      left: 5% !important;
+    }
+
+    .timeline>li>.timeline-panel:before {
+      border-left-width: 0;
+      border-right-width: 15px;
+      left: -15px;
+      right: auto !important;
+    }
+
+    .timeline>li>.timeline-panel:after {
+      border-left-width: 0;
+      border-right-width: 14px;
+      left: -14px;
+      right: auto !important;
+    }
+
+    .timeline>li:not(.timeline-inverted)>.timeline-panel:after,
+    .timeline>li:not(.timeline-inverted)>.timeline-panel:before {
+      @include rotate-180();
+    }
+
+
 
     .navbar{
         .container-fluid{
@@ -67,134 +104,17 @@
             color: $default-color;
         }
 
-        .navbar-toggler-bar{
-            display: block;
-            position: relative;
-            width: 22px;
-            height: 1px;
-            border-radius: 1px;
-            background: $white-bg;
-
-            & + .navbar-toggler-bar{
-                margin-top: 7px;
-            }
-
-            & + .navbar-toggler-bar.navbar-kebab{
-                margin-top: 3px;
-            }
-
-            &.bar2{
-                width: 17px;
-                transition: width .2s linear;
-            }
-        }
-
         &.bg-white:not(.navbar-transparent) .navbar-toggler-bar{
             background-color: $default-color;
         }
-
-        & .toggled .navbar-toggler-bar{
-            width: 24px;
-
-            & + .navbar-toggler-bar{
-                margin-top: 5px;
-            }
-        }
-
     }
 
     .wrapper{
         @include transition (0.50s, cubic-bezier(0.685, 0.0473, 0.346, 1));
     }
 
-    .nav-open{
-        .main-panel{
-            right: 0;
-            @include transform-translate-x(260px);
-        }
-
-        .sidebar{
-            @include transform-translate-x(0px);
-        }
-
-        body{
-            position: relative;
-            overflow-x: hidden;
-        }
-
-        .menu-on-right{
-            .main-panel{
-                @include transform-translate-x(-260px);
-            }
-
-            .navbar-collapse,
-            .sidebar{
-                @include transform-translate-x(0px);
-            }
-
-            .navbar-translate{
-                @include transform-translate-x(-300px);
-            }
-
-            #bodyClick{
-                right: 260px;
-                left: auto;
-            }
-        }
-    }
-
-    .menu-on-right{
-        .sidebar{
-            left: auto;
-            right:0;
-            @include transform-translate-x(260px);
-        }
-    }
-
-    .bar1,
-    .bar2,
-    .bar3 {
-      outline: 1px solid transparent;
-    }
-    .bar1 {
-      top: 0px;
-      @include bar-animation($topbar-back);
-    }
-    .bar2 {
-      opacity: 1;
-    }
-    .bar3 {
-      bottom: 0px;
-      @include bar-animation($bottombar-back);
-    }
-    .toggled .bar1 {
-      top: 6px;
-      @include bar-animation($topbar-x);
-    }
-    .toggled .bar2 {
-      opacity: 0;
-    }
-    .toggled .bar3 {
-      bottom: 6px;
-      @include bar-animation($bottombar-x);
-    }
-
-    @include topbar-x-rotation();
-    @include topbar-back-rotation();
-    @include bottombar-x-rotation();
-    @include bottombar-back-rotation();
-
-    @-webkit-keyframes fadeIn {
-      0% {opacity: 0;}
-      100% {opacity: 1;}
-    }
-    @-moz-keyframes fadeIn {
-      0% {opacity: 0;}
-      100% {opacity: 1;}
-    }
-    @keyframes fadeIn {
-      0% {opacity: 0;}
-      100% {opacity: 1;}
+    .sidebar{
+      box-shadow: none;
     }
 
     #bodyClick{
@@ -231,29 +151,8 @@
         }
     }
 
-    .sidebar,
-    .bootstrap-navbar {
-        position: fixed;
-        display: block;
-        top: 0;
-        height: 100%;
-        width: 260px;
-        right: auto;
-        left: 0;
-        z-index: 1032;
-        visibility: visible;
-        overflow-y: visible;
-        padding: 0;
-        @include transition (0.50s, cubic-bezier(0.685, 0.0473, 0.346, 1));
 
-        @include transform-translate-x(-260px);
-    }
-
-
-
-    .main-panel{
-        width: 100%;
-    }
+    @include sidebar();
 }
 
 @media screen and (min-width: 992px){
@@ -309,6 +208,11 @@
         }
     }
 
+    .user-profile [class*="col-"] {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+
   .card-stats [class*="col-"] .statistics::after {
     display: none;
   }
@@ -336,6 +240,12 @@
     .navbar[class*='navbar-toggleable-'] .container{
         margin-left: 0;
         margin-right: 0;
+    }
+
+    [data-notify="container"].alert{
+      left: 10px !important;
+      right: 10px !important;
+      width: auto;
     }
 
     .card-contributions .card-stats{
@@ -369,4 +279,36 @@
             width: 90%;
         }
     }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  @include sidebar();
+
+  .navbar-minimize{
+    display: none;
+  }
+
+  .sidebar{
+    box-shadow: none;
+
+    .nav-open &{
+      box-shadow: $sidebar-box-shadow;
+    }
+  }
+
+  .sidebar,
+  .main-panel,
+  .sidebar-wrapper{
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-timing-function: cubic-bezier(0.685, 0.0473, 0.346, 1);
+      transition-timing-function: cubic-bezier(0.685, 0.0473, 0.346, 1);
+      -webkit-overflow-scrolling: touch;
+  }
+
 }

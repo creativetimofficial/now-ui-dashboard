@@ -139,7 +139,7 @@
     }
     .td-number{
         text-align: right;
-        min-width: 145px;
+        min-width: 170px;
 
         small{
             margin-right: 3px;
@@ -156,6 +156,11 @@
             width: 100%;
         }
     }
+}
+
+.table-responsive{
+  overflow: auto;
+  padding-bottom: 10px;
 }
 
 #tables .table-responsive{

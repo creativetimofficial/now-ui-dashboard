@@ -1,4 +1,4 @@
-@include form-control-placeholder($medium-gray, 1);
+@include form-control-placeholder($default-color, 1);
 
 .form-control {
     background-color: $transparent-bg;
@@ -18,8 +18,10 @@
         outline: 0 !important;
         color: $black-color;
 
-        & + .input-group-addon,
-        & ~ .input-group-addon{
+        & + .input-group-append .input-group-text,
+        & ~ .input-group-append .input-group-text,
+        & + .input-group-prepend .input-group-text,
+        & ~ .input-group-prepend .input-group-text{
             border: 1px solid $primary-color;
             border-left: none;
             background-color: $transparent-bg;
@@ -56,24 +58,29 @@
         border-bottom-color: transparent;
     }
 
-    & + .input-group-addon{
+    & + .input-group-append .input-group-text,
+    & + .input-group-prepend .input-group-text{
         background-color: $white-bg;
     }
 }
 
-.has-success .input-group-addon,
+.has-success .input-group-append .input-group-text,
+.has-success .input-group-prepend .input-group-text,
 .has-success .form-control{
     border-color: $light-gray;
 }
 
 .has-success .form-control:focus,
-.has-success.input-group-focus .input-group-addon{
+.has-success.input-group-focus .input-group-append .input-group-text,
+.has-success.input-group-focus .input-group-prepend .input-group-text{
     border-color: lighten($success-color, 5%);
 }
 
 .has-danger .form-control,
-.has-danger .input-group-addon,
-.has-danger.input-group-focus .input-group-addon{
+.has-danger .input-group-append .input-group-text,
+.has-danger .input-group-prepend .input-group-text,
+.has-danger.input-group-focus .input-group-prepend .input-group-text,
+.has-danger.input-group-focus .input-group-append .input-group-text{
     border-color: lighten($danger-color, 30%);
     color: $danger-color;
     background-color: rgba(222,222,222, .1);
@@ -137,7 +144,8 @@
 .form-group.no-border,
 .input-group.no-border{
     .form-control,
-    .form-control + .input-group-addon{
+    .form-control + .input-group-prepend .input-group-text,
+    .form-control + .input-group-append .input-group-text{
         background-color: $opacity-gray-3;
         border: medium none;
         &:focus,
@@ -150,13 +158,15 @@
 
     .form-control{
         &:focus{
-            & + .input-group-addon{
+            & + .input-group-prepend .input-group-text,
+            & + .input-group-append .input-group-text{
                 background-color: $opacity-gray-5;
             }
         }
     }
 
-    .input-group-addon{
+    .input-group-prepend .input-group-text,
+    .input-group-append .input-group-text{
         background-color: $opacity-gray-3;
         border: none;
     }
@@ -173,13 +183,17 @@
     }
 }
 
-.input-group-addon {
-    background-color: $white-bg;
+.input-group-append .input-group-text,
+.input-group-prepend .input-group-text {
+    background-color: transparent;
     border: 1px solid $light-gray;
     border-radius: $btn-round-radius;
-    color: $dark-background;
-    padding: $padding-base-vertical - 1 0 $padding-base-vertical - 1 $padding-base-horizontal - 1;
+    color: $default-color;
 
+    & i{
+      opacity: .5;
+    }
+    
     @include transition-input-focus-color();
 
     .has-danger.input-group-focus &{
@@ -207,14 +221,29 @@
     }
 }
 
+.input-group-append,
+.input-group-prepend{
+  margin: 0;
+}
+
+
+.input-group-append .input-group-text{
+  border-left: none;
+}
+.input-group-prepend .input-group-text{
+  border-right: none;
+}
+
 .input-group-focus{
-    .input-group-addon{
+    .input-group-prepend .input-group-text,
+    .input-group-append .input-group-text{
         background-color: $white-bg;
         border-color: $primary-color;
     }
 
     &.no-border{
-        .input-group-addon{
+        .input-group-prepend .input-group-text,
+        .input-group-append .input-group-text{
             background-color: $opacity-gray-5;
         }
     }
@@ -230,12 +259,13 @@
     }
 }
 .input-group[disabled]{
-    .input-group-addon{
+    .input-group-prepend .input-group-text,
+    .input-group-append .input-group-text{
         background-color: $light-gray;
     }
 }
 
-.input-group .form-control:not(:first-child):not(:last-child), .input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child){
+.input-group .form-control:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child){
     border-radius: $btn-round-radius;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -243,13 +273,11 @@
 }
 
 .input-group .form-control:first-child,
-.input-group-addon:first-child,
 .input-group-btn:first-child > .dropdown-toggle,
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
     border-right: 0 none;
 }
 .input-group .form-control:last-child,
-.input-group-addon:last-child,
 .input-group-btn:last-child > .dropdown-toggle,
 .input-group-btn:first-child > .btn:not(:first-child) {
     border-left: 0 none;

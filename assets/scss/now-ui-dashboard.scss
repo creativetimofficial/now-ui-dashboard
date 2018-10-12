@@ -1,12 +1,11 @@
 /*!
 
  =========================================================
- * Now UI Dashboard - v1.0.1
+ * Now UI Dashboard - v1.2.0
  =========================================================
 
- * Product Page: http://www.creative-tim.com/product/now-ui-dashboard
- * Copyright 2017 Creative Tim (http://www.creative-tim.com)
- * Licensed under MIT (https://github.com/creativetimofficial/now-ui-dashboard/blob/master/LICENSE.md)
+ * Product Page: https://www.creative-tim.com/product/now-ui-dashboard
+ * Copyright 2018 Creative Tim (http://www.creative-tim.com)
 
  * Designed by www.invisionapp.com Coded by www.creative-tim.com
 
@@ -39,8 +38,14 @@
 @import "now-ui-dashboard/nucleo-outline";
 @import "now-ui-dashboard/tables";
 @import "now-ui-dashboard/sidebar-and-main-panel";
-@import "now-ui-dashboard/cards";
 @import "now-ui-dashboard/footers";
 @import "now-ui-dashboard/fixed-plugin";
+
+// cards
+@import "now-ui-dashboard/cards";
+@import "now-ui-dashboard/cards/card-plain";
+@import "now-ui-dashboard/cards/card-chart";
+@import "now-ui-dashboard/cards/card-user";
+@import "now-ui-dashboard/cards/card-map";
 
 @import "now-ui-dashboard/responsive";

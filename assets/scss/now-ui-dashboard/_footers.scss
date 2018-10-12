@@ -33,6 +33,11 @@
         }
     }
 
+    &.fixed-bottom{
+      width: calc(100% - 80px);
+      margin-left: auto;
+    }
+
     .copyright{
         font-size: $font-size-small;
         line-height: 1.8;

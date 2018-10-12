@@ -66,3 +66,10 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
 }
+
+.pull-left{
+  float: left;
+}
+.pull-right{
+  float: right;
+}

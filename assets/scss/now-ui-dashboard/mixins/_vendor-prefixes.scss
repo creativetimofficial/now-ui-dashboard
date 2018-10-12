@@ -65,7 +65,7 @@
     background: $color;
   }
 
-  .nav li.active > a{
+  .nav li.active > a:not([data-toggle="collapse"]){
     color: $color;
 
     i{

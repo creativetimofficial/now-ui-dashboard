@@ -4,11 +4,11 @@
 
     &:hover,
     &:focus,
-    &:active,
-    &.active,
-    &:active:focus,
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled):active:focus,
+    &:not(:disabled):not(.disabled).active:focus,
     &:active:hover,
-    &.active:focus,
     &.active:hover,
     .show > &.dropdown-toggle,
     .show > &.dropdown-toggle:focus,
@@ -16,6 +16,7 @@
         background-color: $btn-states-color;
         color: $white-color;
         box-shadow: none;
+        border-color: $btn-states-color; 
     }
 
     &:not([data-action]):hover{
@@ -130,7 +131,15 @@
 
         &:hover,
         &:focus,
-        &:active{
+        &:not(:disabled):not(.disabled):active,
+        &:not(:disabled):not(.disabled).active,
+        &:not(:disabled):not(.disabled):active:focus,
+        &:not(:disabled):not(.disabled).active:focus,
+        &:active:hover,
+        &.active:hover,
+        .show > &.dropdown-toggle,
+        .show > &.dropdown-toggle:focus,
+        .show > &.dropdown-toggle:hover {
             background-color: $transparent-bg;
             color: $btn-states-color;
             border-color: $btn-states-color;
