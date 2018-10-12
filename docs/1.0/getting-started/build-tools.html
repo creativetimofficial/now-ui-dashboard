@@ -253,7 +253,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           
 
           
-            <li class="">
+            <li class="active bd-sidenav-active">
               
                   <a href="../../../docs/1.0/getting-started/build-tools.html">
                     Build Tools
@@ -627,7 +627,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           
 
           
-            <li class="active bd-sidenav-active">
+            <li class="">
               
                   <a href="../../../docs/1.0/plugins/perfect-scrollbar.html">
                     Perfect Scrollbar
@@ -738,28 +738,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
+<li class="toc-entry toc-h3"><a href="#change-brand-colors">Change brand colors</a></li>
+<li class="toc-entry toc-h3"><a href="#compile-scss">Compile SCSS</a></li>
 </ul>
           </div>
         
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
-          <h1 class="bd-title" id="content">Perfect Scrollbar v0.6.13</h1>
-          <p class="bd-lead"></p>
-          <p>“Minimalistic but perfect custom scrollbar plugin.”</p>
+          <h1 class="bd-title" id="content">Build tools</h1>
+          <p class="bd-lead">Learn how to use Now UI Dashboard Pro to build your admin theme, compile SCSS and change brand-colors.</p>
+          <h3 id="change-brand-colors">Change brand colors</h3>
 
-<p>!IMPORTANT Perfect Scrollbar is applied on the <code class="highlighter-rouge">.main-panel</code> and <code class="highlighter-rouge">.sidebar .sidebar-wrapper</code> so we will have a nice scrollbar that is visible only when you actually scroll. Since it is changing the overflows of the CSS it is also affecting the child elements which have a scroll so please make sure that you add the class <code class="highlighter-rouge">.ps-child</code> to any element that should have scroll.</p>
+<ul>
+  <li>You will find all the branding colors inside <code class="highlighter-rouge">assets/scss/now-ui-dashboard/_variables.scss</code>.</li>
+</ul>
 
-<p>For more information please check <strong><a href="https://github.com/utatti/perfect-scrollbar" target="_blank">Full Github Documentation</a></strong>.</p>
+<h3 id="compile-scss">Compile SCSS</h3>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- javascript for activating the Perfect Scrollbar --&gt;</span>
-$('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
-
-<span class="c">&lt;!-- javascript for detroying the Perfect Scrollbar --&gt;</span>
-$('.main-panel').perfectScrollbar('destroy');
-
-<span class="c">&lt;!-- javascript for updating the Perfect Scrollbar when the content of the page is changing --&gt;</span>
-$('.main-panel').perfectScrollbar('update');</code></pre></figure>
-
+<ol>
+  <li>Download the project’s zip.</li>
+  <li>Make sure you have node.js (https://nodejs.org/en/) installed.</li>
+  <li>Type <code class="highlighter-rouge">npm install</code> in terminal/console in the source folder where <code class="highlighter-rouge">package.json</code> is located.</li>
+  <li>Run in terminal <code class="highlighter-rouge">gulp open-app</code> for opening the Dashboard Page (default) of the product. You can set in gulpfile.js from your downloaded archive any page you want to open in browser, at line 30: <code class="highlighter-rouge">gulp.src('examples/dashboard.html')</code>.</li>
+  <li>Run in terminal <code class="highlighter-rouge">gulp compile:scss</code> for a single compilation or <code class="highlighter-rouge">gulp watch</code> for continous compilation of the changes that you make in <code class="highlighter-rouge">*.scss</code> files. This command should be run in the same folder where <code class="highlighter-rouge">gulpfile.js</code> and <code class="highlighter-rouge">package.json</code> are located.</li>
+</ol>
 
         </main>
       </div>
