@@ -129,7 +129,7 @@ now-ui-dashboard
 
 At present, we officially aim to support the last two versions of the following browsers:
 
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
+<a href="https://www.google.com/chrome/"><img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"></a> <a href="https://www.mozilla.org/firefox/new/"><img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"></a> <a href="https://www.microsoft.com/windows/microsoft-edge"><img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"></a> <a href="https://support.apple.com/downloads/safari"><img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"></a> <a href="https://www.opera.com/"><img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64"></a>
 
 
 ## Resources
