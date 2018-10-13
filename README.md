@@ -5,17 +5,17 @@
 
 ![Product Gif](./assets/img/now-ui-dashboard.gif)
 
-**[Now UI Dashboard](https://demos.creative-tim.com/now-ui-dashboard/examples/dashboard.html)** is a responsive Bootstrap 4 kit provided for free by [Invision](https://www.invisionapp.com/) and [Creative Tim](https://www.creative-tim.com/). It combines colors that are easy on the eye, spacious cards, beautiful typography, and graphics. Now UI Dashboard comes packed with all plugins that you might need inside a project and documentation on how to get started. It is light and easy to use, and also very powerful.
+**[Now UI Dashboard](https://demos.creative-tim.com/now-ui-dashboard/examples/dashboard.html)** is a responsive Bootstrap 4 kit provided for free by [InVision](https://www.invisionapp.com/) and [Creative Tim](https://www.creative-tim.com/). It combines colors that are easy on the eye, spacious cards, beautiful typography, and graphics. Now UI Dashboard comes packed with all plugins that you might need inside a project and documentation on how to get started. It is light and easy to use, and also very powerful.
 
 Now UI Dashboard has the same design characteristics as Now UI Kit, so it is quite convenient to use them together. Or you can choose between them depending on the project at hand. If you love Now UI Kit, you'll love Now UI Dashboard.
 Create awesome, lifelike prototypes with InVision and Now so your users can experience and give feedback on your vision!
 
 
-**Bootstrap 4 Support**
+**Bootstrap 4 Support**  
 Now UI Dashboard is built on top of the much awaited Bootstrap 4. This makes starting a new project very simple. It also provides benefits if you are already working on a Bootstrap 4 project; you can just import the Now UI Dashboard style over it. Most of the elements have been redesigned; but if you are using an element we have not touched, it will fall back to the Bootstrap default.
 
 
-#### Special thanks
+#### Special thanks  
 During the development of this dashboard, we have used many existing resources from awesome developers. We want to thank them for providing their tools open source:
 - [Chart.js](https://www.chartjs.org/) for the wonderful charts
 
@@ -39,23 +39,23 @@ Let us know your thoughts below. And good luck with development!
 
 ## Versions
 
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/react.svg" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-pro-react)
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/angular.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-pro-angular2)
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/html.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-pro)
+[<img src="https://s3.amazonaws.com/creativetim_bucket/github/react.svg" width="60" height="60" />](https://www.creative-tim.com/product/now-ui-dashboard-pro-react)
+[<img src="https://s3.amazonaws.com/creativetim_bucket/github/angular.png" width="60" height="60" />](https://www.creative-tim.com/product/now-ui-dashboard-pro-angular)
+[<img src="https://s3.amazonaws.com/creativetim_bucket/github/html.png" width="60" height="60" />](https://www.creative-tim.com/product/now-ui-dashboard-pro)
 
 
 
  React | Angular | HTML |
 | --- | --- | --- |
-| [![Now UI Dashboard React](https://s3.amazonaws.com/creativetim_bucket/products/76/thumb/opt_nud_react_thumbnail.jpg)](https://www.creative-tim.com/product/now-ui-dashboard-react/#/dashboard)  | [![Now UI Dashboard Angular](https://s3.amazonaws.com/creativetim_bucket/products/85/thumb/opt_nud_angular_thumbnail.jpg)](https://www.creative-tim.com/product/now-ui-dashboard-angular) | [![Now UI Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/75/thumb/opt_nud_thumbnail.jpg)](https://www.creative-tim.com/product/now-ui-dashboard/examples/dashboard.html)
+| [![Now UI Dashboard React](https://s3.amazonaws.com/creativetim_bucket/products/76/thumb/opt_nud_react_thumbnail.jpg)](https://www.creative-tim.com/product/now-ui-dashboard-react/)  | [![Now UI Dashboard Angular](https://s3.amazonaws.com/creativetim_bucket/products/85/thumb/opt_nud_angular_thumbnail.jpg)](https://www.creative-tim.com/product/now-ui-dashboard-angular/) | [![Now UI Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/75/thumb/opt_nud_thumbnail.jpg)](https://www.creative-tim.com/product/now-ui-dashboard/)
 
 ## Demo
 
-- [Start page](https://www.creative-tim.com/product/now-ui-dashboard/examples/dashboard.html)
-- [Typography page](https://www.creative-tim.com/product/now-ui-dashboard/examples/typography.html)
-- [User page ](https://www.creative-tim.com/product/now-ui-dashboard/examples/user.html)
+- [Start page](https://demos.creative-tim.com/now-ui-dashboard/examples/dashboard.html)
+- [Typography page](https://demos.creative-tim.com/now-ui-dashboard/examples/typography.html)
+- [User page ](https://demos.creative-tim.com/now-ui-dashboard/examples/user.html)
 
-[View More](https://www.creative-tim.com/product/now-ui-dashboard/examples/dashboard.html).
+[View More](https://demos.creative-tim.com/now-ui-dashboard/examples/dashboard.html).
 
 
 ## Quick start
@@ -142,9 +142,9 @@ At present, we officially aim to support the last two versions of the following 
 - Now UI Dashboard PRO - [demo](https://www.creative-tim.com/product/now-ui-dashboard-pro?ref=github-nud-pro)
 
 ## Reporting Issues
-We use GitHub Issues as the official bug tracker for the Material Dashboard Pro. Here are some advices for our users that want to report an issue:
+We use GitHub Issues as the official bug tracker for the Now UI Dashboard. Here are some advices for our users that want to report an issue:
 
-1. Make sure that you are using the latest version of the Material Dashboard Pro. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/).
+1. Make sure that you are using the latest version of the Now UI Dashboard. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/).
 2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
 3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
