@@ -6,6 +6,7 @@
     border-radius: $btn-round-radius;
     color: $black-color;
     line-height: normal;
+    height: auto;
     font-size: $font-size-small;
     @include transition-input-focus-color();
     @include box-shadow(none);
@@ -193,7 +194,7 @@
     & i{
       opacity: .5;
     }
-    
+
     @include transition-input-focus-color();
 
     .has-danger.input-group-focus &{

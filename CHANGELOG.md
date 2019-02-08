@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.3.0] 2019-02-08
+### Updates, Bugfixing, Improvements
+- added latest version of Bootstrap `4.2.1`
+- all plugins out of date were updated to the latest version
+- `btn-simple` removed
+- added `btn-outline` from the bootstrap
+- docs updated all plugins versions
+
 ## [1.2.0] 2018-10-12
 ### Bootstrap 4.1.3 update
 - `Chart.js` library updated

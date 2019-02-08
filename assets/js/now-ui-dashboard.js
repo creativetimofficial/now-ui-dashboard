@@ -1,11 +1,11 @@
 /*!
 
  =========================================================
- * Now UI Dashboard - v1.2.0
+ * Now UI Dashboard - v1.3.0
  =========================================================
 
  * Product Page: https://www.creative-tim.com/product/now-ui-dashboard
- * Copyright 2018 Creative Tim (http://www.creative-tim.com)
+ * Copyright 2019 Creative Tim (http://www.creative-tim.com)
 
  * Designed by www.invisionapp.com Coded by www.creative-tim.com
 
@@ -20,7 +20,8 @@
 
   if (isWindows) {
     // if we are on windows OS we activate the perfectScrollbar function
-    $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
+    var ps = new PerfectScrollbar('.sidebar-wrapper');
+    var ps2 = new PerfectScrollbar('.main-panel');
 
     $('html').addClass('perfect-scrollbar-on');
   } else {
@@ -53,8 +54,6 @@ $(document).ready(function() {
       $(this).closest('.navbar').addClass('navbar-transparent').removeClass('bg-white');
     });
   }
-
-  nowuiDashboard.initMinimizeSidebar();
 
   $navbar = $('.navbar[color-on-scroll]');
   scroll_distance = $navbar.attr('color-on-scroll') || 500;
@@ -139,36 +138,6 @@ $(window).resize(function() {
 nowuiDashboard = {
   misc: {
     navbar_menu_visible: 0
-  },
-
-  initMinimizeSidebar: function() {
-    if ($('.sidebar-mini').length != 0) {
-      sidebar_mini_active = true;
-    }
-
-    $('#minimizeSidebar').click(function() {
-      var $btn = $(this);
-
-      if (sidebar_mini_active == true) {
-        $('body').removeClass('sidebar-mini');
-        sidebar_mini_active = false;
-        nowuiDashboard.showSidebarMessage('Sidebar mini deactivated...');
-      } else {
-        $('body').addClass('sidebar-mini');
-        sidebar_mini_active = true;
-        nowuiDashboard.showSidebarMessage('Sidebar mini activated...');
-      }
-
-      // we simulate the window Resize so the charts will get updated in realtime.
-      var simulateWindowResize = setInterval(function() {
-        window.dispatchEvent(new Event('resize'));
-      }, 180);
-
-      // we stop the simulation of Window Resize after the animations are completed
-      setTimeout(function() {
-        clearInterval(simulateWindowResize);
-      }, 1000);
-    });
   },
 
   showNotification: function(from, align) {
