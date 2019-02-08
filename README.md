@@ -3,7 +3,7 @@
 
 ![version](https://img.shields.io/badge/version-1.3.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/now-ui-dashboard.svg)](https://github.com/creativetimofficial/now-ui-dashboard/issues?q=is%3Aopen+is%3Aissue) [![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/creativetimofficial/now-ui-dashboard.svg?maxAge=259200)](https://github.com/creativetimofficial/now-ui-dashboard/issues?q=is%3Aissue+is%3Aclosed)
 
-![Product Gif](../assets/img/now-ui-dashboard.gif)
+![Product Gif](assets/img/now-ui-dashboard.gif)
 
 **[Now UI Dashboard](https://demos.creative-tim.com/now-ui-dashboard/examples/dashboard.html)** is a responsive Bootstrap 4 kit provided for free by [Invision](https://www.invisionapp.com/) and [Creative Tim](https://www.creative-tim.com/). It combines colors that are easy on the eye, spacious cards, beautiful typography, and graphics. Now UI Dashboard comes packed with all plugins that you might need inside a project and documentation on how to get started. It is light and easy to use, and also very powerful.
 
