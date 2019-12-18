@@ -14,14 +14,14 @@
 
     &:hover,
     &:focus{
-        @include opacity(1);
-        outline: 0 !important;
+      @include opacity(1);
+      outline: 0 !important;
     }
     &:active,
     &.active,
     .open > &.dropdown-toggle {
-         @include box-shadow(none);
-         outline: 0 !important;
+      @include box-shadow(none);
+      outline: 0 !important;
     }
 
     .badge{
@@ -171,7 +171,7 @@
     padding-right: $padding-round-horizontal;
     padding-left: $padding-round-horizontal;
 
-    &.btn-simple:not(.btn-sm):not(.btn-lg){
+    &[class*="btn-outline-"]:not(.btn-sm):not(.btn-lg){
         padding: $padding-btn-vertical - 1  $padding-round-horizontal - 1;
     }
 }

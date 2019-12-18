@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.5.0] 2019-12-18
+### Updates
+- added latest version of Bootstrap `4.4.1`
+
+## [1.4.0] 2019-07-04
+### Updates
+- added latest version of Bootstrap `4.3.1`
+
 ## [1.3.0] 2019-02-08
 ### Updates, Bugfixing, Improvements
 - added latest version of Bootstrap `4.2.1`
