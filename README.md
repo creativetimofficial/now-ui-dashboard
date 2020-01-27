@@ -51,11 +51,11 @@ Let us know your thoughts below. And good luck with development!
 
 ## Demo
 
-- [Start page](https://www.creative-tim.com/product/now-ui-dashboard/examples/dashboard.html)
-- [Typography page](https://www.creative-tim.com/product/now-ui-dashboard/examples/typography.html)
-- [User page ](https://www.creative-tim.com/product/now-ui-dashboard/examples/user.html)
+- [Start page](https://demos.creative-tim.com/now-ui-dashboard/examples/dashboard.html)
+- [Typography page](https://demos.creative-tim.com/now-ui-dashboard/examples/typography.html)
+- [User page ](https://demos.creative-tim.com/now-ui-dashboard/examples/user.html)
 
-[View More](https://www.creative-tim.com/product/now-ui-dashboard/examples/dashboard.html).
+[View More](https://demos.creative-tim.com/now-ui-dashboard/examples/dashboard.html).
 
 
 ## Quick start
