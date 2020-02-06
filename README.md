@@ -47,7 +47,7 @@ Let us know your thoughts below. And good luck with development!
 
  React | Angular | HTML |
 | --- | --- | --- |
-| [![Now UI Dashboard React](https://s3.amazonaws.com/creativetim_bucket/products/76/thumb/opt_nud_react_thumbnail.jpg)](https://www.creative-tim.com/product/now-ui-dashboard-react/#/dashboard)  | [![Now UI Dashboard Angular](https://s3.amazonaws.com/creativetim_bucket/products/85/thumb/opt_nud_angular_thumbnail.jpg)](https://www.creative-tim.com/product/now-ui-dashboard-angular) | [![Now UI Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/75/thumb/opt_nud_thumbnail.jpg)](https://www.creative-tim.com/product/now-ui-dashboard/examples/dashboard.html)
+| [![Now UI Dashboard React](https://s3.amazonaws.com/creativetim_bucket/products/76/thumb/opt_nud_react_thumbnail.jpg)](https://www.creative-tim.com/product/now-ui-dashboard-react/#/dashboard)  | [![Now UI Dashboard Angular](https://s3.amazonaws.com/creativetim_bucket/products/85/thumb/opt_nud_angular_thumbnail.jpg)](https://www.creative-tim.com/product/now-ui-dashboard-angular) | [![Now UI Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/75/thumb/opt_nud_thumbnail.jpg)](https://demos.creative-tim.com/now-ui-dashboard/examples/dashboard.html)
 
 ## Demo
 
