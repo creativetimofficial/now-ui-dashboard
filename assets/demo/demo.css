@@ -35,6 +35,10 @@
   margin-top: 0;
 }
 
+.card-body{
+  min-height: 2rem;
+}
+
 .offline-doc .page-header {
   display: flex;
   align-items: center;
@@ -60,4 +64,8 @@
 .card.card-upgrade .card-category {
   max-width: 530px;
   margin: 0 auto;
+}
+
+li{
+  list-style-type: none;
 }
