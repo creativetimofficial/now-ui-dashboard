@@ -27,6 +27,7 @@ Let us know your thoughts below. And good luck with development!
 * [Versions](#versions)
 * [Demo](#demo)
 * [Quick Start](#quick-start)
+* [Deploy](#deploy)
 * [Documentation](#documentation)
 * [File Structure](#file-structure)
 * [Browser Support](#browser-support)
@@ -64,6 +65,11 @@ Quick start options:
 
 - Download from [Creative Tim](https://www.creative-tim.com/product/now-ui-dashboard)
 
+## Deploy
+
+:rocket: You can deploy your own version of the template to Genezio with one click:
+
+[![Deploy to Genezio](https://raw.githubusercontent.com/Genez-io/graphics/main/svg/deploy-button.svg)](https://app.genez.io/start/deploy?repository=https://github.com/creativetimofficial/now-ui-dashboard&utm_source=github&utm_medium=referral&utm_campaign=github-creativetim&utm_term=deploy-project&utm_content=button-head)
 
 ## Documentation
 The documentation for the Now UI Dashboard is hosted at our [website](https://demos.creative-tim.com/now-ui-dashboard/docs/1.0/getting-started/introduction.html).
